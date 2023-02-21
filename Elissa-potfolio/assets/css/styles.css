@@ -168,13 +168,11 @@ body.dark-theme {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*
   background-color: var(--body-color);
   box-shadow: 0 4px 20px (207,24%,35%,.1);
   padding-inline: 1.5rem;
-  border-radius:3rem; */
+  border-radius:3rem; 
 }
-/* 
 .nav__logo,
 .nav__toggle,
 .nav__close{
