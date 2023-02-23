@@ -316,6 +316,14 @@ bottom: 2rem;
   color: var(--text-color-light);
   margin-bottom: 1rem;
 }
+
+.home__info-description{
+  padding-right: 4rem;
+}
+.home__info-number{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+}
 /*=============== SKILLS ===============*/
 
 
