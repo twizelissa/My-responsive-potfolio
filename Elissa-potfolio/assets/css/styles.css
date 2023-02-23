@@ -271,18 +271,25 @@ bottom: 2rem;
   place-items: center;
 }
 .home__perfil{
-  width: 170px;
+  width: 180px;
   height: 260px;
   background-color: var(--gradient-color);
   border-radius: 5.5rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  /* align-items: flex-start; */
+  /* align-items: flex-end; */
 }  
 .home__perfil img{
-  width: 180px;
+  width: 170px;
 }
+/* .home__shape-waves,
+.home__shape-circle{
+    position: absolute;
+    opacity: .3;
+} */
+
+
 /*=============== SKILLS ===============*/
 
 
