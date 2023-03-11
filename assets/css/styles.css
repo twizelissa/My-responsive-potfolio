@@ -505,7 +505,7 @@ bottom: 2rem;
 }
 
 .projects__content{
-  display: grid;
+  display: grid; 
   justify-content: center;
 }
 
@@ -539,25 +539,33 @@ bottom: 2rem;
   transition: transform .3s;
 }
 
-.projects__button i:hover{
+.projects__button:hover i{
   transform: translateX(.25rem);
 }
 
 /* Swiper class */
 .projects__container .swiper-button-prev::after
 .projects__container .swiper-button-next::after{
-  content:'';
-}
+  content: '';
+} 
 
 .projects__container .swiper-button-prev,
 .projects__container .swiper-button-next{
   width: initial;
   height: initial;
   margin: initial;
-  font-size: 2.5rem;
+  font-size: 2.5rem; 
   color: var(--title-color);
 }
+.projects__container .swiper-button-prev{
+  left: -1rem;
+  top: 4.5rem;
+}
 
+.projects__container .swiper-button-next{
+ right: -1rem;
+  top: 4.5rem;
+}
 
 
 /*=============== TESTIMONIAL ===============*/
