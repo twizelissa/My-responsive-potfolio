@@ -41,8 +41,6 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
     pagination: {
       el: ".swiper-pagination",
     },
-    mousewheel: true,
-    keyboard: true,
   });
 
 /*=============== SWIPER TESTIMONIAL ===============*/

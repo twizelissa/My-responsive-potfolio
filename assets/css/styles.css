@@ -567,6 +567,22 @@ bottom: 2rem;
   top: 4.5rem;
 }
 
+.projects__container .swiper-slide{
+  margin-bottom: 4.5rem;
+}
+
+.projects__container .swiper-pagination-bullets{
+  bottom: 0;
+}
+
+.projects__container .swiper-pagination-bullet{
+  background-color: var(--text-color-light);
+  opacity: initial;
+}
+
+.projects__container .swiper-pagination-bullet-active{
+  background-color: var(--title-color);
+}
 
 /*=============== TESTIMONIAL ===============*/
 
