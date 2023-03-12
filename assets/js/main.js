@@ -41,6 +41,14 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
     pagination: {
       el: ".swiper-pagination",
     },
+    breakpoints: {
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: -56,
+      },
+    },
+    mousewheel: true,
+    keyboard: true,
   });
 
 /*=============== SWIPER TESTIMONIAL ===============*/
