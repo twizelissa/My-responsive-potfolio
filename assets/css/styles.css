@@ -547,7 +547,7 @@ bottom: 2rem;
 }
 
 /* Swiper class */
-.projects__container .swiper-button-prev::after
+.projects__container .swiper-button-prev::after,
 .projects__container .swiper-button-next::after{
   content: '';
 } 
@@ -621,9 +621,6 @@ bottom: 2rem;
   right: -1.5rem;
   opacity: .1;
 }
-
-
-
 
 
 /* Swiper class */
