@@ -649,13 +649,17 @@
 
               <div class="contact__form-div">
                 <label for="" class="contact__form-tag">Mail</label>
-                  <input type="text" name="user_name" required placeholder="Write your email" class="contact__form-input" id="contact">
+                  <input type="text" name="user_name" required placeholder="Write your email" class="contact__form-input" id="contact-email">
               </div>
 
-              <div class="contact__form-div">
+              <div class="contact__form-div contact__form-area">
                 <label for="" class="contact__form-tag">Project</label>
-                  <input type="text" name="user_name" required placeholder="Write your project" class="contact__form-input" id="contact">
+                  <textarea name="user_project" placeholder="Enter description of your project" required id="contact-project" class="contact__form-input"></textarea>
               </div>
+
+              <button type="submit" class="contact__button">
+                Submit <i class="ri-arrow-right-up-line"></i>
+              </button>
             </form>
           </div>
 
