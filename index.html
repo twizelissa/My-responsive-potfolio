@@ -643,7 +643,7 @@
             <form action="" class="contact__form" id="contact-form">
               <div class="contact__form-div">
                 <label for="" class="contact__form-tag">Names</label>
-                  <input type="text" name="user_name" placeholder="Write your name" class="contact__form-input" id="contact">
+                  <input type="text" name="user_name" placeholder="Write your name" class="contact__form-input" id="contact-name">
               </div>
 
               <div class="contact__form-div">
@@ -655,6 +655,8 @@
                 <label for="" class="contact__form-tag">Project</label>
                   <textarea name="user_project" placeholder="Enter description of your project" required id="contact-project" class="contact__form-input"></textarea>
               </div>
+
+              <p class="contact__message" id="contact-message">Message</p>
 
               <button type="submit" class="contact__button">
                 Submit <i class="ri-arrow-right-up-line"></i>
@@ -679,6 +681,7 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
