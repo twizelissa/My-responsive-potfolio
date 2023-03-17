@@ -84,7 +84,7 @@ const sendEmail = (e)=>{
 
     //service -templateId -publickey
 
-    emailjs.sendForm('','','')
+    emailjs.sendForm('service_1rexf3a','','')
 
   }
   
