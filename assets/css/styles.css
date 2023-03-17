@@ -787,6 +787,10 @@ bottom: 2rem;
 
 /* Status color */
 
+.color-red{
+  color: hsl(270,56%, 45%);
+}
+
 
 /*=============== FOOTER ===============*/
 

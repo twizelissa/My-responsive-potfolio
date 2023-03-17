@@ -68,18 +68,28 @@ contactProject= document.getElementById('contact-project'),
 contactMessage= ocument.getElementById('contact-message');
 
 const sendEmail = (e)=>{
+  e.preventDefault()
+
+
   //check if the fild has value
   if(contactName.value === ''|| contactEmail.value ==='' || contactProject.value === ''){
     //add and remove color
-
     contactMessage.classList.remove('color-blue')
     contactMessage.classList.add('color-red')
-
+    //show message
+    contactMessage.textContent = 'Write all the input fields '
 
   }
-  e.preventDefault()
-  contactForm.addEventListener('.submit',sendEmail)
+  else{
+
+    //service -templateId -publickey
+
+    emailjs.sendForm('','','')
+
+  }
+  
 }
+contactForm.addEventListener('.submit',sendEmail)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
