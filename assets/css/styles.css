@@ -827,21 +827,23 @@ bottom: 2rem;
   column-gap: 1.2rem;
 }
 
-.footer__social-link{
+.footer_social-link{
   font-size: 1.25rem;
   color: var(--title-color);
   transition: transform .3s;
 }
 
-.footer__social-link:hover{
-  transform: translateY(-1.5rem);
+.footer_social-link:hover{
+  transform: translateY(-.15rem);
+ 
+}
+
+.footer__copy{
+  display: block;
   margin-top: 4.5rem;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
-
-
 }
-
 
 /*=============== SCROLL BAR ===============*/
 
