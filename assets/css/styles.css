@@ -241,9 +241,14 @@ body.dark-theme {
 
 .show-menu{
 bottom: 2rem;
-} */
+}
+ */
 
 /* Active link */
+
+.active-link{
+ color: var(--title-color);
+}
 
 
 /*=============== HOME ===============*/
@@ -846,8 +851,19 @@ bottom: 2rem;
 }
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(207, 4%, 75%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(207, 4%, 65%);
+  border-radius: .5rem;
+}
 
-
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(207, 4%, 55%);
+}
 /*=============== SCROLL UP ===============*/
 
 
