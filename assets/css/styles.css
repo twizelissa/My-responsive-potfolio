@@ -788,7 +788,10 @@ bottom: 2rem;
 /* Status color */
 
 .color-red{
-  color: hsl(270,56%, 45%);
+  color: hsl(4,71%, 50%);
+}
+.color-blue{
+  color: hsl(207, 56%, 45%);
 }
 
 

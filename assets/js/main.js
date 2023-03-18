@@ -63,9 +63,9 @@ let swiperTestimonial = new Swiper(".testimonial__container ", {
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
 contactName = document.getElementById('contact-name'),
-contactEmail= document.getElementById('contact-email'),
+contactEmail = document.getElementById('contact-email'),
 contactProject= document.getElementById('contact-project'),
-contactMessage= ocument.getElementById('contact-message');
+contactMessage= document.getElementById('contact-message')
 
 const sendEmail = (e)=>{
   e.preventDefault()
@@ -84,12 +84,24 @@ const sendEmail = (e)=>{
 
     //service -templateId -publickey
 
-    emailjs.sendForm('service_1rexf3a','','')
+    emailjs.sendForm('service_1rexf3a','template_gg3gcu9','#contact-form','wublZqR1lTpSrOUVj')
+    .then(() =>{
+      //show message and add color
+      contactMessage.classList.add('color-blue')
+      contactMessage.textContent = 'Message sent'
+
+      //remove message after five seconds
+
+      setTimeout(()=>{
+        contactMessage.textContent = ''
+      },5000)
+
+    })
 
   }
   
 }
-contactForm.addEventListener('.submit',sendEmail)
+contactForm.addEventListener('submit',sendEmail)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
