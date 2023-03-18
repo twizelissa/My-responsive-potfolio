@@ -96,7 +96,15 @@ const sendEmail = (e)=>{
         contactMessage.textContent = ''
       },5000)
 
+    },(error)=>{
+      alert('OOPs! SOMETHING HAS GONE WRONG ...',error)
     })
+
+    // to clear the input field
+
+    contactName.value = ''
+    contactEmail.value = ''
+    contactProject.value = ''
 
   }
   
