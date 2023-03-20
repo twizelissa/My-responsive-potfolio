@@ -326,10 +326,10 @@ bottom: 2rem;
   place-items: center;
 }
 .home__perfil{
-  width: 180px;
-  height: 260px;
+  width: 170px;
+  height: 250px;
   background-color: var(--gradient-color);
-  border-radius: 5.5rem;
+  border-radius: 5.0rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
