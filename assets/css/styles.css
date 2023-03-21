@@ -259,6 +259,7 @@ body.dark-theme {
   grid-template-columns: repeat(3,max-content);
   justify-content: center;
   gap: 2rem 3rem;
+  transition: bottom .3s;
 }
 
 .nav__link{
@@ -1000,14 +1001,14 @@ bottom: 2rem;
     grid-template-columns: 1fr 2fr 1fr;
   }
   .home__data{
-    order:2;
+    order: 2;
   }
   .home__info:nth-child(3){
     order:3;
     text-align: right;
   }
   .home__info{
-    margin: top 10rem;
+    margin-top: 10rem;
   }
   .home__info-description{
     padding-right: 0;
@@ -1030,7 +1031,7 @@ bottom: 2rem;
   }
 
   .projects__container{
-    width: 500%;
+    width: 500px;
   }
 
   .contact__form{
@@ -1040,14 +1041,13 @@ bottom: 2rem;
     justify-content: center;
     column-gap: 8rem;
   }
-
 }
 /* For large devices */
 
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1024px){
 
   .header{
-    top: 0;
+    top: 0rem;
     bottom: initial;
     background-color: var(--body-color);
     transition: .4s;
@@ -1055,7 +1055,7 @@ bottom: 2rem;
   }
   .nav{
     width: initial;
-    height: calc(var(--hed)+1.5rem);
+    height: calc(var(--header-height) + 1.5rem);
     box-shadow: none;
     border-radius: 0;
     column-gap: 3rem;
@@ -1067,12 +1067,17 @@ bottom: 2rem;
   .nav__close{
     display: none;
   }
-  .nav__menu{
+   .nav__menu{
     width: initial;
     margin-left: auto;
     background-color: var(--body-color);
     transition: background .4s;
   }
+  .nav__list{
+    display: flex;
+    column-gap: 3rem; 
+  }
+  
   .nav__link {
     font-size: var(--normal-font-size);
   }
@@ -1103,6 +1108,36 @@ bottom: 2rem;
   }
   .show-scroll{
     bottom: 5rem;
+  } 
+
+  /* change background header */
+
+  .bg-header{
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+  }
+
+  .dark-theme .bg-header{
+    box-shadow: 0 6px 24px hsla(207, 24%, 8%, .6);
   }
 
 }
+@media screen  and (min-width: 1048){
+  .container{
+    margin-inline: auto;
+  }  
+}
+
+/* responsiveness doesn't work for big screen */
+
+/* @media screen and (min-width: 1200px){
+  .section__border{
+    padding-bottom: 6rem;
+  }
+  .section__subtitle{
+    margin-bottom: 5rem;
+  }
+  .home__title{
+    font-size: var(--biggest-font-size);
+  }
+
+} */
